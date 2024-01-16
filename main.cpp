@@ -3,12 +3,12 @@
 using namespace std;
 #include"Typing_Game.h"
 //#include"てつのヘッダ"
-//#include"ようたのヘッダ"
+#include "MarubatuGame.h"
 
 int main(void) {
 	cout << "1. タイピングゲーム" << endl;
 	cout << "2. てつのゲーム" << endl;
-	cout << "3. ようたのゲーム" << endl << endl;
+	cout << "3. 〇×ゲーム" << endl << endl;
 	cout << "プレイするゲーム番号 >> ";
 	string GameNumber;
 	cin >> GameNumber;
@@ -23,7 +23,7 @@ int main(void) {
 
 	Typing_Game game1;
 	//てつのゲームのクラス game2;
-	//ようたのゲームのクラス game3;
+	Marubatsu_Game game3;
 
 	switch (stoi(GameNumber))
 	{
