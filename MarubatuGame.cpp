@@ -67,7 +67,12 @@ bool Marubatsu_Game::isMarkable(int x, int y) {
     if (board[x][y] != ' ') {
         //プレイヤーのターンのみ表示
         if (turn == TURN_PLAYER) {
-            cout << "そのマスはすでに埋まっています..." << endl;
+            if (judgeResult() == RESULT_NONE) {
+                cout << "そのマスはすでに埋まっています..." << endl;
+            }
+            else {
+                cout << "勝負が決まりました！" << endl;
+            }
         }
         return false;
     }
@@ -117,6 +122,17 @@ void Marubatsu_Game::writeMark(int x, int y) {
 
 //マス目（ボードを）出力する関数
 void Marubatsu_Game::printBoard() {
+    if (turn == TURN_PLAYER) {
+        if (judgeResult() == RESULT_NONE) {
+            cout << "あなたのターン" << endl;
+        }
+    }
+    else {
+        if (judgeResult() == RESULT_NONE) {
+            cout << "相手のターン" << endl;
+        }
+    }
+    cout << "--------------------------" << endl;
     cout << " ";
     for (int x = 0; x < NUM; x++) {
         cout << " " << x;
@@ -254,8 +270,6 @@ void Marubatsu_Game::runGame() {
             break;
         }
     }
-
-    cout << "--------------------------" << endl;
     // 7. 勝負の結果を表示する
     printResult(result);
 }
