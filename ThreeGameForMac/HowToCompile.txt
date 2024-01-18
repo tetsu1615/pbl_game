@@ -1,5 +1,7 @@
 # Macでこのゲームをコンパイル・実行する方法
 
+0. ThreeGameForMac をダウンロードする。
+
 1. ターミナルで ThreeGameForMac ディレクトリに移動する。
    `cd ./{ディレクトリの配置場所へのパス}/ThreeGameForMac`
 
