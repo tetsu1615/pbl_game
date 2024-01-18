@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include"Typing_Game.h"
-#include"Othello.h"
-#include"MarubatuGame.h"
+#include "TypingGame.h"
+#include "othello.h"
+#include "MarubatuGame.h"
 
 int main(void) {
 	cout << "1. タイピングゲーム" << endl;
@@ -21,7 +21,7 @@ int main(void) {
 		cout << endl;
 	}
 
-	Typing_Game game1;
+	TypingGame game1;
 	Othello game2;
 	Marubatsu_Game game3;
 
@@ -29,13 +29,10 @@ int main(void) {
 	{
 	case(1):
 		game1.runGame();
-		break;
 	case(2):
 		game2.GameStart();
-		break;
 	case(3):
 		game3.runGame();
-		break;
 	default:
 		break;
 	}
