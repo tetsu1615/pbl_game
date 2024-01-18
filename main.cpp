@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include "Typing_Game.h"
+#include "TypingGame.h"
 #include "othello.h"
 #include "MarubatuGame.h"
 
@@ -21,7 +21,7 @@ int main(void) {
 		cout << endl;
 	}
 
-	Typing_Game game1;
+	TypingGame game1;
 	Othello game2;
 	Marubatsu_Game game3;
 
