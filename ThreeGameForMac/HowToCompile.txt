@@ -1,0 +1,13 @@
+# Macでこのゲームをコンパイル・実行する方法
+
+1. ターミナルで ThreeGameForMac ディレクトリに移動する。
+   `cd ./{ディレクトリの配置場所へのパス}/ThreeGameForMac`
+
+2. ディレクトリ移動ができたら、以下のコードを入力し Enter を押す。
+   `clang++ -std=c++11 MarubatuGame.cpp main.cpp Othello.cpp Typing_Game.cpp -o ThreeGameForMac`
+
+3. Finder に ThreeGameForMac という実行ファイルができているのを確認する。
+
+4. Finder にて ThreeGameForMac をダブルクリック。
+
+5. Windows と同様プレイ可能。
