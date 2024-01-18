@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include"Typing_Game.h"
-//#include"てつのヘッダ"
+#include "Typing_Game.h"
+#include "othello.h"
 #include "MarubatuGame.h"
 
 int main(void) {
@@ -22,7 +22,7 @@ int main(void) {
 	}
 
 	Typing_Game game1;
-	//てつのゲームのクラス game2;
+	Othello game2;
 	Marubatsu_Game game3;
 
 	switch (stoi(GameNumber))
@@ -30,9 +30,9 @@ int main(void) {
 	case(1):
 		game1.runGame();
 	case(2):
-		//game2.runGame();
+		game2.GameStart();
 	case(3):
-		//game3.runGame();
+		game3.runGame();
 	default:
 		break;
 	}
